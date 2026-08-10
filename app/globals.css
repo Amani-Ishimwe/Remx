@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --gray-light: #F2F2F0;
+  --gray-100: #F2F2F0;
+  --gray-200: #E4E4E1;
+  --gray-300: #D1D1CD;
+  --gray-400: #A8A8A3;
+  --gray-500: #878782;
+  --gray-600: #6B6B66;
+  --gray-700: #454542;
+  --gray-800: #262624;
+  --gray-900: #0A0A0A;
+  --background: #FFFFFF;
+  --foreground: #0A0A0A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-epilogue), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3D Perspective for Flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Skeleton shimmer sweep */
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #F2F2F0 0%,
+    #E4E4E1 50%,
+    #F2F2F0 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Custom crisp scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D1CD;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A8A3;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
