@@ -6,27 +6,28 @@ import { cn } from "@/lib/utils";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "solid" | "outline" | "ghost" | "subtle" | "dashed";
-  size?: "sm" | "md" | "lg" | "icon";
+  size?: "sm" | "md" | "lg" | "xl" | "icon";
   isLoading?: boolean;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "solid", size = "md", isLoading, children, disabled, ...props }, ref) => {
+  ({ className, variant = "solid", size = "sm", isLoading, children, disabled, ...props }, ref) => {
     const baseStyles =
       "inline-flex items-center justify-center font-medium rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-remx-black focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none select-none text-sm";
 
     const variantStyles = {
-      solid: "bg-remx-black text-white hover:bg-remx-800 active:bg-remx-900 border border-remx-black shadow-sm",
-      outline: "bg-white text-remx-black border border-remx-300 hover:border-remx-900 hover:bg-remx-100 active:bg-remx-200",
+      solid: "bg-remx-black text-white hover:bg-remx-800 active:bg-remx-900 border border-transparent",
+      outline: "bg-white text-remx-black border border-remx-200 hover:border-remx-400 hover:bg-remx-100 active:bg-remx-200",
       subtle: "bg-remx-100 text-remx-black hover:bg-remx-200 active:bg-remx-300 border border-transparent",
       ghost: "text-remx-black hover:bg-remx-100 active:bg-remx-200 border border-transparent",
-      dashed: "bg-white text-remx-black border border-dashed border-remx-400 hover:border-remx-900 hover:bg-remx-100",
+      dashed: "bg-white text-remx-black border border-dashed border-remx-300 hover:border-remx-500 hover:bg-remx-100",
     };
 
     const sizeStyles = {
       sm: "h-8 px-3 text-xs gap-1.5",
       md: "h-10 px-4 text-sm gap-2",
-      lg: "h-12 px-6 text-base font-semibold gap-2.5",
+      lg: "h-13 px-6 text-base font-semibold gap-2.5",
+      xl: "h-14 sm:h-15 px-8 text-base sm:text-lg font-bold gap-3",
       icon: "h-10 w-10 p-0 rounded-lg",
     };
 

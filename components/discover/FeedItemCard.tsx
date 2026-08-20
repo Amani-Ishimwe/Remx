@@ -26,7 +26,7 @@ export function FeedItemCard({
       whileHover={{ y: -2 }}
       transition={{ duration: 0.15 }}
       className={cn(
-        "rounded-xl border border-remx-200 bg-white p-6 transition-all flex flex-col justify-between shadow-sm hover:border-remx-400 group",
+        "rounded-xl border border-remx-100 bg-white p-6 transition-all flex flex-col justify-between shadow-sm hover:border-remx-200 group",
         className
       )}
     >

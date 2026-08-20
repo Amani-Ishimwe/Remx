@@ -60,7 +60,7 @@ export default function DashboardPage() {
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:col-span-2 rounded-xl border-2 border-remx-black bg-remx-black text-white p-6 sm:p-7 flex flex-col justify-between shadow-md"
+            className="md:col-span-2 rounded-xl border border-remx-300 bg-remx-black text-white p-6 sm:p-7 flex flex-col justify-between shadow-md"
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-3">
@@ -118,7 +118,7 @@ export default function DashboardPage() {
           </motion.div>
 
           {/* Quick Metrics Capsule */}
-          <div className="rounded-xl border border-remx-200 bg-remx-100/50 p-6 flex flex-col justify-between space-y-4">
+          <div className="rounded-xl border border-remx-100 bg-remx-100/50 p-6 flex flex-col justify-between space-y-4">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-label text-remx-500">
                 Retention Momentum
@@ -164,7 +164,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Quick "Paste to Remember" bar */}
-        <div className="rounded-xl border border-remx-200 bg-white p-5 shadow-sm">
+        <div className="rounded-xl border border-remx-100 bg-white p-5 shadow-sm">
           <form onSubmit={handleQuickSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             <div className="flex-1 relative">
               <Sparkles className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-remx-500" />
@@ -243,7 +243,7 @@ export default function DashboardPage() {
             {goals.map((goal) => (
               <div
                 key={goal.id}
-                className="p-4 rounded-xl border border-remx-200 bg-white space-y-3 shadow-sm hover:border-remx-400 transition-colors"
+                className="p-4 rounded-xl border border-remx-100 bg-white space-y-3 shadow-sm hover:border-remx-200 transition-colors"
               >
                 <div className="flex items-center justify-between">
                   <Badge variant="subtle" size="sm">
@@ -299,3 +299,4 @@ export default function DashboardPage() {
     </AppLayout>
   );
 }
+

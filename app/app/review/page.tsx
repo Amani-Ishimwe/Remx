@@ -167,7 +167,7 @@ function ReviewSessionContent() {
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="rounded-2xl border-2 border-remx-black bg-white p-8 sm:p-12 text-center space-y-7 shadow-xl"
+          className="rounded-2xl border border-remx-300 bg-white p-8 sm:p-12 text-center space-y-7 shadow-xl"
         >
           <div className="h-16 w-16 rounded-full bg-remx-black text-white mx-auto flex items-center justify-center shadow-lg">
             <CheckCircle2 className="h-8 w-8 stroke-[2.5px]" />
@@ -184,7 +184,7 @@ function ReviewSessionContent() {
 
           {/* Milestone Summary Metrics */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-lg mx-auto text-left">
-            <div className="p-4 rounded-xl border border-remx-200 bg-remx-100/60 space-y-1">
+            <div className="p-4 rounded-xl border border-remx-100 bg-remx-100/60 space-y-1">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 New Interval
               </span>
@@ -195,7 +195,7 @@ function ReviewSessionContent() {
               </p>
             </div>
 
-            <div className="p-4 rounded-xl border border-remx-200 bg-remx-100/60 space-y-1">
+            <div className="p-4 rounded-xl border border-remx-100 bg-remx-100/60 space-y-1">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 Retention Streak
               </span>
@@ -207,7 +207,7 @@ function ReviewSessionContent() {
               </div>
             </div>
 
-            <div className="p-4 rounded-xl border border-remx-200 bg-remx-100/60 space-y-1">
+            <div className="p-4 rounded-xl border border-remx-100 bg-remx-100/60 space-y-1">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 Next Recall
               </span>
@@ -279,3 +279,4 @@ export default function ReviewPage() {
     </AppLayout>
   );
 }
+

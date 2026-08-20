@@ -172,7 +172,7 @@ function NewDeckContent() {
             exit={{ opacity: 0, y: -8 }}
             className="space-y-6"
           >
-            <div className="rounded-xl border border-remx-200 bg-remx-100 p-5 flex items-center justify-between">
+            <div className="rounded-xl border border-remx-100 bg-remx-100 p-5 flex items-center justify-between">
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-label text-remx-600">
                   Step 2: Immediate Retrieval Check
@@ -242,7 +242,7 @@ function NewDeckContent() {
                 {generationResult.flashcards.map((card, idx) => (
                   <div
                     key={card.id || idx}
-                    className="p-5 rounded-xl border border-remx-200 bg-white space-y-2 shadow-sm"
+                    className="p-5 rounded-xl border border-remx-100 bg-white space-y-2 shadow-sm"
                   >
                     <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                       Card {idx + 1}
@@ -259,7 +259,7 @@ function NewDeckContent() {
             </div>
 
             {/* Assign to Cohort Selection */}
-            <div className="p-5 rounded-xl border border-remx-200 bg-remx-100/60 space-y-3">
+            <div className="p-5 rounded-xl border border-remx-100 bg-remx-100/60 space-y-3">
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-remx-900" />
                 <span className="text-xs font-bold uppercase tracking-label text-remx-900">
@@ -299,7 +299,7 @@ function NewDeckContent() {
             key="completed"
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="rounded-2xl border-2 border-remx-black bg-white p-8 sm:p-12 text-center space-y-6 shadow-xl"
+            className="rounded-2xl border border-remx-300 bg-white p-8 sm:p-12 text-center space-y-6 shadow-xl"
           >
             <div className="h-16 w-16 rounded-full bg-remx-black text-white mx-auto flex items-center justify-center shadow-md">
               <CheckCircle2 className="h-8 w-8 stroke-[2.5px]" />
@@ -314,7 +314,7 @@ function NewDeckContent() {
               </p>
             </div>
 
-            <div className="p-4 rounded-xl border border-remx-200 bg-remx-100 max-w-md mx-auto flex items-center justify-between text-xs font-semibold">
+            <div className="p-4 rounded-xl border border-remx-100 bg-remx-100 max-w-md mx-auto flex items-center justify-between text-xs font-semibold">
               <span>Spaced Schedule:</span>
               <span className="font-bold text-remx-black">
                 1d &rarr; 3d &rarr; 7d &rarr; 14d &rarr; 30d (Mastery)
@@ -362,3 +362,4 @@ export default function NewDeckPage() {
     </AppLayout>
   );
 }
+

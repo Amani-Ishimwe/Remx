@@ -23,7 +23,7 @@ export function GroupCard({ group, className }: GroupCardProps) {
       whileHover={{ y: -2 }}
       transition={{ duration: 0.15 }}
       className={cn(
-        "rounded-xl border border-remx-200 bg-white p-6 transition-all flex flex-col justify-between shadow-sm hover:border-remx-400 group",
+        "rounded-xl border border-remx-100 bg-white p-6 transition-all flex flex-col justify-between shadow-sm hover:border-remx-200 group",
         className
       )}
     >
@@ -39,7 +39,7 @@ export function GroupCard({ group, className }: GroupCardProps) {
             </Badge>
           </div>
 
-          <div className="flex items-center gap-1 text-xs font-bold text-remx-black bg-remx-100 px-2 py-0.5 rounded-full border border-remx-200">
+          <div className="flex items-center gap-1 text-xs font-bold text-remx-black bg-remx-100 px-2 py-0.5 rounded-full border border-remx-100">
             <Flame className="h-3.5 w-3.5 fill-remx-black text-remx-black" />
             <span>{maxStreak}d streak</span>
           </div>

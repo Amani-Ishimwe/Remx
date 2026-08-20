@@ -27,7 +27,7 @@ export function SummaryCard({
   return (
     <div
       className={cn(
-        "rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm",
+        "rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm",
         className
       )}
     >

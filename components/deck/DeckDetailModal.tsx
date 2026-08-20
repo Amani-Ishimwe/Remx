@@ -117,7 +117,7 @@ export function DeckDetailModal({
                     {deck.keyTakeaways.map((takeaway, idx) => (
                       <div
                         key={idx}
-                        className="flex items-start gap-3 p-3 rounded-lg border border-remx-200 bg-white text-xs text-remx-700"
+                        className="flex items-start gap-3 p-3 rounded-lg border border-remx-100 bg-white text-xs text-remx-700"
                       >
                         <span className="h-5 w-5 rounded bg-remx-black text-white shrink-0 flex items-center justify-center font-bold text-[10px]">
                           {idx + 1}
@@ -136,7 +136,7 @@ export function DeckDetailModal({
               {deck.flashcards.map((card, idx) => (
                 <div
                   key={card.id || idx}
-                  className="p-4 rounded-xl border border-remx-200 bg-remx-100/50 space-y-2"
+                  className="p-4 rounded-xl border border-remx-100 bg-remx-100/50 space-y-2"
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
@@ -160,7 +160,7 @@ export function DeckDetailModal({
               {deck.quiz.map((q, idx) => (
                 <div
                   key={q.id || idx}
-                  className="p-4 rounded-xl border border-remx-200 bg-white space-y-3"
+                  className="p-4 rounded-xl border border-remx-100 bg-white space-y-3"
                 >
                   <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                     Question {idx + 1}
@@ -196,7 +196,7 @@ export function DeckDetailModal({
                 onDelete(deck.id);
                 onClose();
               }}
-              className="text-remx-700 hover:text-remx-black hover:border-remx-900 gap-1.5"
+              className="text-remx-700 hover:text-remx-black hover:border-remx-400 gap-1.5"
             >
               <Trash2 className="h-3.5 w-3.5" />
               <span>Delete Deck</span>

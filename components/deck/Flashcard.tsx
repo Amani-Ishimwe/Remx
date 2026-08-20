@@ -121,7 +121,7 @@ export function Flashcard({
               onGrade("forgot");
               setIsFlipped(false);
             }}
-            className="flex-1 max-w-xs border-2 border-remx-300 hover:border-remx-900 text-remx-800 gap-2 h-14"
+            className="flex-1 max-w-xs border-2 border-remx-300 hover:border-remx-400 text-remx-800 gap-2 h-14"
           >
             <X className="h-5 w-5 stroke-[2.5px]" />
             <div className="flex flex-col text-left">

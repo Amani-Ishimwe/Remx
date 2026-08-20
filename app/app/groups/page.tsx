@@ -47,7 +47,7 @@ export default function GroupsPage() {
 
       <div className="p-6 sm:p-8 max-w-7xl mx-auto w-full space-y-7">
         {/* Cohort Manifesto Callout */}
-        <div className="rounded-xl border border-remx-200 bg-remx-100 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="rounded-xl border border-remx-100 bg-remx-100 p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-label text-remx-600">
               Collaborative Retention Culture
@@ -124,3 +124,4 @@ export default function GroupsPage() {
     </AppLayout>
   );
 }
+

@@ -119,7 +119,7 @@ export default function LibraryPage() {
               placeholder="Search decks by title or tag..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full h-10 pl-9 pr-3 rounded-lg border border-remx-200 bg-white text-xs text-remx-black placeholder:text-remx-400 focus:border-remx-900 focus:outline-none transition-colors"
+              className="w-full h-10 pl-9 pr-3 rounded-lg border border-remx-100 bg-white text-xs text-remx-black placeholder:text-remx-400 focus:border-remx-900 focus:outline-none transition-colors"
             />
           </div>
         </div>
@@ -182,3 +182,4 @@ export default function LibraryPage() {
     </AppLayout>
   );
 }
+

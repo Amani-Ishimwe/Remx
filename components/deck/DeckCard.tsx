@@ -44,12 +44,11 @@ export function DeckCard({
       transition={{ duration: 0.15 }}
       className={cn(
         "rounded-xl bg-white p-5 sm:p-6 transition-all flex flex-col justify-between relative shadow-sm group",
-        // Strict monochrome due state distinction via border weight & style:
         due
-          ? "border-2 border-remx-black ring-1 ring-remx-black/10"
+          ? "border border-remx-300"
           : isMastered
-          ? "border border-remx-300 bg-remx-100/40"
-          : "border border-remx-200 hover:border-remx-400",
+          ? "border border-remx-100 bg-remx-100/40"
+          : "border border-remx-100 hover:border-remx-300",
         className
       )}
     >
@@ -58,17 +57,17 @@ export function DeckCard({
         <div className="flex items-center justify-between gap-2 mb-3">
           <div className="flex items-center gap-1.5 flex-wrap">
             {due ? (
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-remx-black text-white text-[10px] font-bold uppercase tracking-label">
-                <span className="h-1.5 w-1.5 rounded-full bg-white animate-ping" />
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-remx-black text-white text-[10px] font-semibold uppercase tracking-label">
+                <span className="h-1.5 w-1.5 rounded-full bg-white/70 animate-ping" />
                 <span>Due for Review</span>
               </span>
             ) : isMastered ? (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-remx-900 bg-white text-remx-900 text-[10px] font-bold uppercase tracking-label">
-                <CheckCircle2 className="h-3 w-3 text-remx-900" />
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-remx-200 bg-white text-remx-700 text-[10px] font-semibold uppercase tracking-label">
+                <CheckCircle2 className="h-3 w-3 text-remx-500" />
                 <span>Mastered (30d)</span>
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-dashed border-remx-400 bg-remx-100 text-remx-700 text-[10px] font-semibold uppercase tracking-label">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-dashed border-remx-200 bg-remx-100 text-remx-600 text-[10px] font-medium uppercase tracking-label">
                 <Clock className="h-3 w-3" />
                 <span>{formatDueDate(deck.nextDueAt)}</span>
               </span>
@@ -82,7 +81,7 @@ export function DeckCard({
           </div>
 
           {deck.groupName && (
-            <span className="inline-flex items-center gap-1 text-[10px] text-remx-600 font-semibold bg-remx-100 px-2 py-0.5 rounded-md border border-remx-200">
+            <span className="inline-flex items-center gap-1 text-[10px] text-remx-500 font-medium bg-remx-100 px-2 py-0.5 rounded-md border border-remx-100">
               <Users className="h-2.5 w-2.5" />
               <span>{deck.groupName}</span>
             </span>

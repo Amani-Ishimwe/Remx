@@ -71,7 +71,7 @@ export function Modal({
             {/* Close button */}
             <button
               onClick={onClose}
-              className="absolute top-5 right-5 h-8 w-8 rounded-full border border-remx-200 bg-remx-100 flex items-center justify-center text-remx-700 hover:text-remx-black hover:border-remx-900 transition-colors"
+              className="absolute top-5 right-5 h-8 w-8 rounded-full border border-remx-100 bg-remx-100 flex items-center justify-center text-remx-700 hover:text-remx-black hover:border-remx-400 transition-colors"
               aria-label="Close modal"
             >
               <X className="h-4 w-4" />

@@ -36,7 +36,7 @@ export function ArticleInputCard({
   };
 
   return (
-    <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 shadow-sm">
+    <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 shadow-sm">
       {/* Tab Switcher */}
       <div className="flex items-center justify-between border-b border-remx-200 pb-4 mb-6">
         <div className="flex items-center gap-2">
@@ -144,7 +144,7 @@ export function ArticleInputCard({
               whileTap={{ scale: 0.98 }}
               onClick={() => handleSelectSample(sample)}
               disabled={isGenerating}
-              className="text-left p-3 rounded-lg border border-remx-200 bg-remx-100/60 hover:bg-remx-100 hover:border-remx-900 transition-all group"
+              className="text-left p-3 rounded-lg border border-remx-100 bg-remx-100/60 hover:bg-remx-100 hover:border-remx-400 transition-all group"
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-remx-900 group-hover:underline">

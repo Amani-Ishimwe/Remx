@@ -33,7 +33,7 @@ export function QuizQuestion({
   };
 
   return (
-    <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+    <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-remx-200 pb-4">
         <span className="text-xs font-bold uppercase tracking-label text-remx-600">
@@ -60,7 +60,7 @@ export function QuizQuestion({
           // Monochrome feedback state styles:
           // Correct: black-fill with check icon and scale pop
           // Incorrect: gray-outline with dashed border and horizontal shake
-          let stateStyle = "border-remx-300 bg-white text-remx-900 hover:border-remx-900 hover:bg-remx-100";
+          let stateStyle = "border-remx-300 bg-white text-remx-900 hover:border-remx-400 hover:bg-remx-100";
           let icon = null;
 
           if (hasSubmitted) {
@@ -124,7 +124,7 @@ export function QuizQuestion({
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="p-4 rounded-lg border border-remx-200 bg-remx-100 text-xs text-remx-700 space-y-1"
+            className="p-4 rounded-lg border border-remx-100 bg-remx-100 text-xs text-remx-700 space-y-1"
           >
             <div className="flex items-center gap-1.5 font-bold text-remx-black uppercase tracking-label">
               <HelpCircle className="h-3.5 w-3.5" />

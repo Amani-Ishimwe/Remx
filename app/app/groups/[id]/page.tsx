@@ -114,7 +114,7 @@ export default function GroupDetailPage() {
 
       <div className="p-6 sm:p-8 max-w-7xl mx-auto w-full space-y-8">
         {/* Cohort Header Hero */}
-        <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+        <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-remx-200 pb-5">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function GroupDetailPage() {
             </div>
 
             {/* Invite Code Pill */}
-            <div className="flex items-center gap-2 bg-remx-100 p-2 rounded-lg border border-remx-200 shrink-0">
+            <div className="flex items-center gap-2 bg-remx-100 p-2 rounded-lg border border-remx-100 shrink-0">
               <div className="flex flex-col">
                 <span className="text-[9px] font-bold uppercase tracking-label text-remx-500">
                   Invite Code
@@ -163,7 +163,7 @@ export default function GroupDetailPage() {
 
           {/* Supportive Momentum Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-200">
+            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-100">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 Shared Deck Library
               </span>
@@ -172,7 +172,7 @@ export default function GroupDetailPage() {
               </p>
             </div>
 
-            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-200">
+            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-100">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 Collective Reviews
               </span>
@@ -181,7 +181,7 @@ export default function GroupDetailPage() {
               </p>
             </div>
 
-            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-200">
+            <div className="p-4 rounded-lg bg-remx-100/50 border border-remx-100">
               <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                 Total Cards Retained
               </span>

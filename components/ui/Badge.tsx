@@ -17,11 +17,11 @@ export function Badge({
     "inline-flex items-center font-medium rounded-full uppercase tracking-label select-none";
 
   const variantStyles = {
-    solid: "bg-remx-black text-white border border-remx-black",
-    outline: "bg-white text-remx-900 border border-remx-300",
-    subtle: "bg-remx-100 text-remx-800 border border-remx-200",
-    dashed: "bg-white text-remx-700 border border-dashed border-remx-400",
-    dot: "bg-remx-100 text-remx-900 border border-remx-200 pl-2",
+    solid: "bg-remx-black text-white border border-remx-black/0",
+    outline: "bg-white text-remx-900 border border-remx-100",
+    subtle: "bg-remx-100 text-remx-700 border border-remx-100",
+    dashed: "bg-white text-remx-600 border border-dashed border-remx-200",
+    dot: "bg-remx-100 text-remx-900 border border-remx-100 pl-2",
   };
 
   const sizeStyles = {

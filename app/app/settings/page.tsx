@@ -70,7 +70,7 @@ export default function SettingsPage() {
 
       <div className="p-6 sm:p-8 max-w-4xl mx-auto w-full space-y-8">
         {/* Profile Settings */}
-        <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+        <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
           <div className="flex items-center gap-2.5 border-b border-remx-200 pb-4">
             <User className="h-5 w-5 text-remx-900" />
             <div>
@@ -110,7 +110,7 @@ export default function SettingsPage() {
         </div>
 
         {/* Learning Goals Manager */}
-        <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+        <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
           <div className="flex items-center justify-between border-b border-remx-200 pb-4">
             <div className="flex items-center gap-2.5">
               <Target className="h-5 w-5 text-remx-900" />
@@ -131,7 +131,7 @@ export default function SettingsPage() {
             {goals.map((goal) => (
               <div
                 key={goal.id}
-                className="flex items-center justify-between p-3.5 rounded-lg border border-remx-200 bg-remx-100/50"
+                className="flex items-center justify-between p-3.5 rounded-lg border border-remx-100 bg-remx-100/50"
               >
                 <div>
                   <div className="flex items-center gap-2">
@@ -178,7 +178,7 @@ export default function SettingsPage() {
         </div>
 
         {/* Spaced Interval Schedule Info */}
-        <div className="rounded-xl border border-remx-200 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+        <div className="rounded-xl border border-remx-100 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
           <div className="flex items-center gap-2.5 border-b border-remx-200 pb-4">
             <Bell className="h-5 w-5 text-remx-900" />
             <div>
@@ -193,7 +193,7 @@ export default function SettingsPage() {
             {SRS_INTERVALS.map((days, idx) => (
               <div
                 key={days}
-                className="p-3.5 rounded-lg border border-remx-200 bg-remx-100/60 text-center space-y-1"
+                className="p-3.5 rounded-lg border border-remx-100 bg-remx-100/60 text-center space-y-1"
               >
                 <span className="text-[10px] font-bold uppercase tracking-label text-remx-500">
                   Stage {idx + 1}
@@ -246,3 +246,4 @@ export default function SettingsPage() {
     </AppLayout>
   );
 }
+

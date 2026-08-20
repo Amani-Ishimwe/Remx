@@ -111,8 +111,8 @@ export default function PricingPage() {
               transition={{ duration: 0.2 }}
               className={`rounded-2xl p-8 flex flex-col justify-between transition-all relative ${
                 tier.highlight
-                  ? "border-2 border-remx-black bg-remx-black text-white shadow-2xl"
-                  : "border border-remx-200 bg-white text-remx-black shadow-sm"
+                  ? "border border-remx-300 bg-remx-black text-white shadow-2xl"
+                  : "border border-remx-100 bg-white text-remx-black shadow-sm"
               }`}
             >
               <div>
@@ -183,7 +183,7 @@ export default function PricingPage() {
                   className={`w-full font-bold ${
                     tier.highlight
                       ? "bg-white text-remx-black hover:bg-remx-100 border-white"
-                      : "border-remx-300 hover:border-remx-900"
+                      : "border-remx-300 hover:border-remx-400"
                   }`}
                 >
                   {tier.cta}
@@ -208,7 +208,7 @@ export default function PricingPage() {
             {faqs.map((faq) => (
               <div
                 key={faq.q}
-                className="p-6 rounded-xl border border-remx-200 bg-remx-100/50 space-y-2"
+                className="p-6 rounded-xl border border-remx-100 bg-remx-100/50 space-y-2"
               >
                 <h3 className="text-sm font-bold text-remx-black">{faq.q}</h3>
                 <p className="text-xs text-remx-700 leading-relaxed">{faq.a}</p>
@@ -220,3 +220,4 @@ export default function PricingPage() {
     </div>
   );
 }
+

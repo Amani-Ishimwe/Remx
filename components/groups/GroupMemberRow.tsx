@@ -91,7 +91,7 @@ export interface GroupActivityItemProps {
 
 export function GroupActivityItem({ activity }: GroupActivityItemProps) {
   return (
-    <div className="flex items-start gap-3 p-3.5 rounded-lg border border-remx-200 bg-white">
+    <div className="flex items-start gap-3 p-3.5 rounded-lg border border-remx-100 bg-white">
       <div className="h-7 w-7 rounded-full bg-remx-100 border border-remx-300 text-remx-900 flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
         {activity.user.slice(0, 2).toUpperCase()}
       </div>
